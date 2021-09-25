@@ -1,0 +1,28 @@
+/* INFORMACION */
+.information {
+  z-index: 999;
+  position: fixed;
+  top: 150%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--title-color);
+  transition: all 600ms ease;
+}
+
+.information.show {
+  top: 0;
+}
+
+.information .close svg {
+  transform: rotate(180deg);
+}
+
+.information h3 {
+  border: 0;
+  border-bottom: thin solid #000;
+}
+
+.information p {
+  text-align: justify;
+}

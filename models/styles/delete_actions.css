@@ -1,0 +1,48 @@
+.delete-actions {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(2px);
+  background: var(--black-alpha-color);
+}
+.delete-actions.none {
+  display: none;
+}
+
+.delete-actions article {
+  position: relative;
+  width: 220px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  border: 2px solid #000;
+  background: rgba(129, 127, 127, 0.452);
+  box-shadow: 6px 4px 6px var(--first-color);
+}
+
+.delete-actions a {
+  color: crimson;
+  position: absolute;
+  top: 4px;
+  right: 4px;
+}
+
+.delete-actions button {
+  width: 150px;
+  margin: 0 auto;
+  padding: 0.5rem;
+  font-weight: bold;
+  color: var(--gray-color);
+  border-radius: 2px;
+  border: thin solid var(--first-color);
+  background: var(--third-color);
+}
+.delete-actions button:last-child {
+  margin-top: 1rem;
+}

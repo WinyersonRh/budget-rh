@@ -1,0 +1,35 @@
+.select-action {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  transition: 400ms all ease;
+}
+
+.select-action.hide {
+  left: -100%;
+}
+
+.select-action button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--first-color);
+  text-shadow: 2px 2px var(--black-color);
+  border: 2px solid var(--first-color);
+  box-shadow: 4px 4px var(--black-color);
+  background: none;
+  transition: 300ms all ease;
+}
+
+.select-action button:active {
+  color: var(--black-color);
+  text-shadow: none;
+  box-shadow: 2px 2px var(--black-color);
+  background: var(--first-color);
+}
