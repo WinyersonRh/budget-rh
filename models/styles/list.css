@@ -1,0 +1,208 @@
+/* LISTA DE ELEMENTOS */
+.list-elements aside {
+  display: flex;
+  flex-direction: column;
+  border-bottom: medium solid var(--first-color);
+  box-shadow: 0 2px 4px #000;
+}
+
+.list-elements aside span {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
+.list-elements aside span i {
+  color: var(--first-color);
+  text-shadow: 2px 2px var(--black-color);
+}
+
+.list-elements aside span i.insuficent {
+  color: crimson;
+  text-shadow: 2px 2px var(--black-color);
+}
+
+.list-elements .list-action {
+  display: flex;
+  flex-direction: row;
+  padding: 0.5rem 0;
+  justify-content: space-evenly;
+  background: var(--black-alpha-color);
+}
+
+.list-elements .list-action button {
+  position: relative;
+  background: none;
+}
+
+.list-elements .add {
+  margin-left: 5rem;
+}
+
+.list-elements .list-action svg {
+  width: 30px;
+  height: 30px;
+  fill: var(--first-color);
+}
+
+.list-elements .list-action button:disabled svg {
+  opacity: 0.4;
+}
+
+.list-elements article {
+  min-height: 25vh;
+  max-height: 50vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem 1rem;
+  overflow-y: scroll;
+}
+
+.list-elements article button {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0.5rem;
+  color: var(--gray-color);
+  border-bottom: thin solid var(--first-alpha-color);
+  text-shadow: 2px 2px var(--black-color);
+  background: none;
+}
+
+.list-elements article button:focus {
+  background: var(--second-alpha-color);
+}
+
+.list-elements article button i {
+  font-size: 1rem;
+  color: var(--first-color);
+}
+
+.list-elements article button i::before {
+  content: "$";
+}
+.list-elements article button i::after {
+  content: ",00";
+}
+
+.list-elements .empty {
+  position: absolute;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: #4e7586;
+}
+.list-elements .empty.none {
+  display: none;
+}
+.list-elements .empty img {
+  width: 30px;
+  height: 30px;
+}
+
+#budget::before,
+#remaining::before,
+#total::before {
+  content: "$";
+}
+#budget::after,
+#remaining::after,
+#total::after {
+  content: ",00";
+}
+
+@media screen and (min-width: 768px) {
+  /* LISTA DE ELEMENTOS */
+  .list-elements aside {
+    padding: 0 5rem;
+  }
+
+  .list-elements aside span {
+    font-size: 1.2rem;
+  }
+
+  .list-elements .list-action {
+    position: absolute;
+    flex-direction: column;
+    width: 10%;
+    top: 7.5rem;
+    bottom: 0;
+    right: 0;
+  }
+
+  .list-elements .list-action button {
+    margin: 0.8rem auto;
+  }
+
+  .list-elements article {
+    width: 70%;
+    margin: 0 auto;
+    background: var(--black-alpha-color);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* LISTA DE ELEMENTOS */
+  .list-elements aside {
+    padding: 0 calc(50% + 1rem) 0 1rem;
+  }
+
+  .list-elements .list-action {
+    position: absolute;
+    flex-direction: row;
+    width: 50%;
+    height: 18vh;
+    top: 0;
+    right: 0;
+    border: 0;
+    box-shadow: none;
+  }
+
+  .list-elements .list-action button {
+    margin: 0.8rem auto;
+    cursor: pointer;
+  }
+
+  .list-elements .list-action button svg {
+    width: 45px;
+    height: 45px;
+  }
+
+  .list-elements article {
+    width: 50%;
+    min-height: 54vh;
+    max-height: 54vh;
+    margin-right: 100%;
+    background: var(--black-alpha-color);
+  }
+
+  .list-elements article::-webkit-scrollbar {
+    width: 0.5rem;
+    background: transparent;
+  }
+  .list-elements article::-webkit-scrollbar-thumb {
+    border: thin solid #000;
+    background: var(--first-alpha-color);
+  }
+
+  .list-elements article button {
+    cursor: pointer;
+    transition: 150ms ease all;
+  }
+  .list-elements article button:hover {
+    background: var(--second-alpha-color);
+  }
+
+  .list-elements .empty {
+    font-size: 2rem;
+  }
+  .list-elements .empty img {
+    width: 60px;
+    height: 60px;
+  }
+}

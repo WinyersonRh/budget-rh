@@ -1,0 +1,52 @@
+/* LISTAS GUARDADAS */
+:root {
+  --first-color: #059bac;
+  --first-alpha-color: rgba(5, 155, 172, 0.75);
+  --second-color: #045372;
+  --second-alpha-color: rgba(4, 83, 114, 0.75);
+  --third-color: #041c25;
+  --third-alpha-color: rgba(4, 28, 37, 0.75);
+  --white-color: #fff;
+  --gray-light-color: #f3f3f3;
+  --gray-color: #ccc;
+  --gray-dark-color: #666;
+  --black-color: #000;
+  --white-alpha-color: rgba(255, 255, 255, 0.5);
+  --black-alpha-color: rgba(0, 0, 0, 0.5);
+  --link-color: #496d8c;
+  --title-color: #333;
+  --text-color: #222;
+  --font-default: "Montserrat", sans-serif;
+  --font-raleway: "Raleway", sans-serif;
+  --font-pt-sans-narrow: "PT Sans Narrow", sans-serif;
+  --font-yellowtail: "Yellowtail", cursive;
+  --max-width: 1200px;
+  --header-height: 15vh;
+  --footer-height: 12vh;
+  --hero-image: url(comienzos.jpg);
+}
+
+.savelist article {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.savelist button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 280px;
+  font-size: 1rem;
+  color: var(--first-color);
+  border-bottom: thin solid var(--first-alpha-color);
+  text-shadow: 2px 1px var(--black-color);
+  background: none;
+}
+
+.savelist button svg {
+  position: absolute;
+  right: 0;
+  fill: var(--second-color);
+}

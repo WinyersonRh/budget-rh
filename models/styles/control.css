@@ -1,0 +1,289 @@
+/* COMPRAS DE MATERIALES */
+.control-purchases,
+.control-purchases * {
+  transition: all 400ms ease;
+}
+
+.control-purchases {
+  display: none;
+  color: transparent;
+  margin-left: 100%;
+  opacity: 0;
+}
+
+.control-purchases.show {
+  color: #fff;
+  margin-left: 0;
+  opacity: 1;
+}
+
+.control-purchases form {
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  background: rgba(31, 30, 30, 0.452);
+  box-shadow: 2px 2px 4px var(--black-color);
+}
+
+.control-purchases form.box-shadow {
+  padding: 1.5rem 1rem;
+  box-shadow: 6px 6px var(--black-alpha-color);
+}
+
+.control-purchases span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.5rem 5px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  border-bottom: 2px solid #000;
+  color: var(--first-color);
+  text-shadow: 2px 2px var(--black-color);
+  background: var(--third-color);
+}
+
+.purchases *:disabled {
+  color: var(--gray-alpha-color);
+  border-bottom: 2px solid var(--black-alpha-color);
+  background: rgba(77, 77, 77, 0.1);
+}
+
+.control-purchases .ci-control {
+  width: 140px;
+  padding: 0.5rem;
+  margin-top: 2rem;
+  color: var(--gray-color);
+  border-bottom: 2px solid var(--second-color);
+  background: var(--black-alpha-color);
+}
+
+.control-purchases .ci-control:focus {
+  border-bottom: 2px solid var(--first-color);
+}
+
+.control-purchases .ci-control.error {
+  border-bottom: 2px solid crimson;
+  background: rgba(255, 0, 0, 0.1);
+}
+
+.control-purchases .control-btn {
+  width: 4rem;
+  margin: 2rem auto 0;
+  padding: 0.5rem;
+  font-weight: bold;
+  color: var(--gray-color);
+  border-bottom: 2px solid var(--first-alpha-color);
+  background: var(--second-color);
+}
+
+.control-purchases .control-btn:disabled {
+  color: var(--gray-dark-color);
+  border-bottom: 2px solid transparent;
+  background: rgba(77, 77, 77, 0.2);
+}
+
+.purchases-list {
+  width: 100%;
+  margin: 1rem auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.purchases-list h4 {
+  padding: 0.5rem;
+  color: var(--first-color);
+  text-shadow: 2px 2px var(--black-color);
+}
+
+.purchases-list table {
+  width: 100%;
+}
+
+.purchases-list hr:nth-of-type(1) {
+  width: 40%;
+  border-color: var(--first-color);
+}
+.purchases-list hr:nth-of-type(2) {
+  width: 80%;
+  margin: 0;
+  border-color: var(--first-color);
+}
+.purchases-list hr:nth-of-type(3) {
+  width: 40%;
+  border-color: var(--first-color);
+}
+
+.customers-actions th,
+.customers-list th {
+  padding: 0.5rem;
+  height: 2rem;
+  overflow: hidden;
+  color: #ccc;
+  text-align: center;
+  font-weight: 100;
+  font-family: "Lucida Sans", "Lucida Sans Regular", sans-serif;
+  border: 2px solid #000;
+  background: var(--second-alpha-color);
+}
+
+.customers-actions td,
+.customers-list td {
+  padding: 0.5rem;
+  color: #ccc;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+  border: 2px solid #000;
+  background: var(--black-alpha-color);
+}
+
+.customers-actions td:active {
+  background: var(--gray-alpha-color);
+}
+
+.customers-actions svg {
+  fill: var(--first-color);
+  margin: 0 1rem;
+}
+
+.customer:active {
+  background: var(--gray-dark-color);
+}
+
+.back-registers {
+  display: none;
+  width: 100%;
+  margin: 1rem auto;
+  padding: 0.5rem;
+  border-radius: 2px;
+  border: 2px solid var(--first-color);
+  font-size: 1rem;
+  color: #ccc;
+  background: var(--second-alpha-color);
+}
+
+.back-registers.show {
+  display: block;
+}
+
+.back-registers:active {
+  background: var(--second-color);
+}
+
+/* .customers-info {} */
+
+.filter-options,
+.order-options {
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  pointer-events: none;
+  backdrop-filter: blur(6px);
+  background: var(--black-alpha-color);
+  transition: 300ms all ease;
+}
+
+.filter-options.show,
+.order-options.show {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.filter-options h4,
+.order-options h4 {
+  position: absolute;
+  top: 5rem;
+  width: 15rem;
+  padding: 4px;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  text-align: center;
+  color: var(--first-color);
+  border-top: 2px solid var(--first-color);
+  border-bottom: 2px solid var(--first-color);
+}
+
+.filter-options svg,
+.order-options svg {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  transform: rotate(-90deg);
+}
+
+.filter-options button,
+.order-options button {
+  width: 15rem;
+  margin: 0.5rem auto;
+  padding: 1rem;
+  color: #ccc;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 4px;
+  border: 2px solid var(--first-color);
+  background: var(--third-color);
+}
+
+.filter-options button:active,
+.order-options button:active {
+  background: var(--second-color);
+}
+
+@media screen and (min-width: 768px) {
+  .control-purchases.show {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .control-purchases form {
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 4px;
+    background: rgba(31, 30, 30, 0.452);
+    box-shadow: 2px 2px 4px var(--black-color);
+  }
+
+  .control-purchases .ci-control {
+    width: 70%;
+  }
+
+  .control-purchases .control-btn {
+    width: 70%;
+    margin: 1rem auto 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .control-purchases.show {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .control-purchases .ci-control {
+    width: 50%;
+  }
+
+  .control-purchases .control-btn {
+    width: 50%;
+    margin: 1rem auto 0;
+  }
+}

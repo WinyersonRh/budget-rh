@@ -1,0 +1,62 @@
+.save-actions {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(2px);
+  background: var(--black-alpha-color);
+}
+.save-actions.none {
+  display: none;
+}
+
+.save-actions form {
+  position: relative;
+  width: 220px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  border: 2px solid #000;
+  background: rgba(129, 127, 127, 0.452);
+  box-shadow: 6px 4px 6px var(--first-color);
+}
+
+.save-actions a {
+  color: crimson;
+  position: absolute;
+  top: 4px;
+  right: 4px;
+}
+
+.save-actions label {
+  text-align: center;
+  padding: 4px;
+}
+.save-actions input {
+  width: 150px;
+  margin: 0 auto;
+  padding: 0.5rem;
+  color: var(--gray-color);
+  border-bottom: 2px solid var(--second-color);
+  background: var(--black-alpha-color);
+}
+
+.save-actions input:focus {
+  border-bottom: 2px solid var(--first-color);
+}
+
+.save-actions button {
+  width: 150px;
+  margin: 1rem auto 0;
+  padding: 0.5rem;
+  font-weight: bold;
+  color: var(--gray-color);
+  border-radius: 2px;
+  border: thin solid var(--first-color);
+  background: var(--third-color);
+}
