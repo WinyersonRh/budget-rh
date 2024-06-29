@@ -14,13 +14,13 @@ const customers = {
 
 // SIMULACION DE BASE DE DATOS DE CLIENTES
 const customersPurchases = {
-  27439511: {
-    name: "Winyerson",
+  11111111: {
+    name: "Annie",
     lastname: "Rivera",
     age: "21",
-    phone: "04142729654",
-    email: "winyersonrivera@gmail.com",
-    gender: "m",
+    phone: "0123456789",
+    email: "customer1@gmail.com",
+    gender: "f",
     list1: {
       name: "Techo",
       price: "35000",
@@ -28,13 +28,13 @@ const customersPurchases = {
       result: "Exitoso",
     },
   },
-  27774428: {
-    name: "Leidy",
+  22222222: {
+    name: "Vince",
     lastname: "Carrasco",
     age: "20",
-    phone: "04127005127",
-    email: "leidycarrasco1989@gmail.com",
-    gender: "f",
+    phone: "0123456789",
+    email: "customer2@gmail.com",
+    gender: "m",
     list1: {
       name: "Closet",
       price: "32000",
@@ -42,12 +42,12 @@ const customersPurchases = {
       result: "Exitoso",
     },
   },
-  14165437: {
-    name: "Yenny",
+  33333333: {
+    name: "Arianna",
     lastname: "Chacon",
     age: "41",
-    phone: "04242169822",
-    email: "yennyichac@gmail.com",
+    phone: "0123456789",
+    email: "customer3@gmail.com",
     gender: "f",
     list1: {
       name: "Encimeras",
@@ -56,12 +56,12 @@ const customersPurchases = {
       result: "Exitoso",
     },
   },
-  25990203: {
-    name: "Wilinyer",
-    lastname: "Rivera",
+  44444444: {
+    name: "Jefferson",
+    lastname: "Gutierrez",
     age: "24",
-    phone: "926087327",
-    email: "Wilinyerriveradeka_aac@outlook.es",
+    phone: "0123456789",
+    email: "customer4@outlook.es",
     gender: "m",
     list1: {
       name: "Escritorio",
@@ -70,12 +70,12 @@ const customersPurchases = {
       result: "Pendiente",
     },
   },
-  30111851: {
-    name: "Daikel",
+  55555555: {
+    name: "Hernesto",
     lastname: "Dominguez",
     age: "18",
-    phone: "04125629000",
-    email: "daikel.od@gmail.com",
+    phone: "0123456789",
+    email: "customer5@gmail.com",
     gender: "m",
     list1: {
       name: "Techos de sin",
@@ -84,12 +84,12 @@ const customersPurchases = {
       result: "Pendiente",
     },
   },
-  9902156: {
+  66666666: {
     name: "Agustin",
     lastname: "Silva",
     age: "33",
-    phone: "04140456212",
-    email: "agustinsilva@gmail.com",
+    phone: "0123456789",
+    email: "customer6@gmail.com",
     gender: "m",
     list1: {
       name: "Escritorio",
@@ -98,12 +98,12 @@ const customersPurchases = {
       result: "Pendiente",
     },
   },
-  17111390: {
+  77777777: {
     name: "Yonny",
     lastname: "Salas",
     age: "52",
-    phone: "04148562202",
-    email: "yonnysalas@gmail.com",
+    phone: "0123456789",
+    email: "customer7@gmail.com",
     gender: "m",
     list1: {
       name: "Construccion",
@@ -112,12 +112,12 @@ const customersPurchases = {
       result: "Cancelado",
     },
   },
-  21034506: {
+  88888888: {
     name: "Angel",
     lastname: "Pereira",
     age: "20",
-    phone: "04167879011",
-    email: "angelpereira@gmail.com",
+    phone: "0123456789",
+    email: "customer8@gmail.com",
     gender: "m",
     list1: {
       name: "Encimeras",
@@ -126,12 +126,12 @@ const customersPurchases = {
       result: "Cancelado",
     },
   },
-  14660911: {
-    name: "Maria",
+  99999999: {
+    name: "Emily",
     lastname: "Mendez",
     age: "28",
-    phone: "04245066057",
-    email: "mariamendez@gmail.com",
+    phone: "0123456789",
+    email: "customer9@gmail.com",
     gender: "f",
     list1: {
       name: "Barra",
